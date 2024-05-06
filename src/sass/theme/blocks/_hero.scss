@@ -1,0 +1,50 @@
+.hero {
+    min-height: 240px;
+    background-position: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    isolation: isolate;
+    position: relative;
+    display: grid;
+    align-content: center;
+    .overlay {
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(45deg, var(--col-blue-400) 20%, transparent);
+        opacity: 0.6;
+        z-index: -1;
+    }
+}
+
+.hero_carousel {
+    position: relative;
+    .carousel-item {
+        min-height: 500px;
+        isolation: isolate;
+        .overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(90deg, black, red);
+            opacity: 0.2;
+            z-index: -1;
+        }
+        img {
+            position: absolute;
+            height: 500px;
+            inset: 0;
+            object-fit: cover;
+            object-position: center;
+            z-index: -2;
+        }
+    }
+    &__words {
+        min-height: 500px;
+        display: grid;
+        align-content: center;
+        width: min(630px,90vw);
+        span {
+            color: #fff;
+        }
+    }
+}

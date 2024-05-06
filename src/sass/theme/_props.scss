@@ -1,0 +1,50 @@
+$col-primary: #00A0DE;
+$col-dark: #00487C;
+$col-darkest: #0D0630;
+$col-highlight: #53DD6C;
+$col-grey: #FFF0F0;
+
+:root {
+
+    --col-white: #ffffff;
+    --col-black: #55595c;
+
+    --hsl-blue-400: 216 38% 39%; // #3e5d8a;
+    --col-blue-400: hsl( var(--hsl-blue-400) );
+    --hsl-grey-400: 214 12% 40%; // #5a6573;
+    --col-grey-400: hsl( var(--hsl-grey-400) );
+    --hsl-green-400: 150 50% 40%; // #339966;
+    --col-green-400: hsl( var(--hsl-green-400) );
+
+    --ff-body: 'Lato', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    --ff-headings: 'Lato', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    --fw-300: 300;
+    --fw-400: 400;
+    --fw-500: 500;
+    --fw-600: 600;
+    --fw-700: 700;
+    --fw-800: 800;
+
+    --fs-200: 13px;
+    --fs-300: 15px;
+    --fs-400: 18px;
+    --fs-500: 20px;
+    --fs-600: 24px;
+    --fs-700: 32px;
+    --fs-800: 48px;
+    --fs-900: 80px;
+
+    --lh-normal: 1.5;
+    --lh-700: 1.3;
+    --lh-800: 1.2;
+    --lh-900: 1.1;
+
+    --ls-900: 0.02em;
+
+    --h-top-mobile: 75px;
+    --h-top: 100px;
+
+    --transition: 200ms ease-in-out;
+
+}

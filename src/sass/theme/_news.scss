@@ -1,0 +1,54 @@
+.wp-element-caption {
+    text-align: center;
+}
+
+.news_index {
+    display: grid;
+    --col-count: 1;
+    @media (min-width: 576px) {
+        --col-count: 2;
+    }
+    @media (min-width: 992px) {
+        --col-count: 3;
+    }
+    grid-template-columns: repeat(var(--col-count), 1fr);
+    gap: 1rem;
+    
+    &__card {
+        height: 100%;
+    }
+
+}
+
+.related {
+    position: sticky;
+    top: 2rem;
+    &__card {
+        text-decoration: none;
+        display: grid;
+        grid-template-rows: auto 1fr;
+        h3 {
+            transition: color var(--transition);
+        }
+        &:hover {
+            h3 {
+                color: var(--col-green-400);
+            }
+        }
+    }
+}
+
+
+.blog {
+    &__image {
+        aspect-ratio: 16 / 9;
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+        transition: transform 300ms ease;
+        margin-bottom: 0.5rem;
+    }
+    &__content > .container-xl {
+        padding-inline: 0;
+    }
+}

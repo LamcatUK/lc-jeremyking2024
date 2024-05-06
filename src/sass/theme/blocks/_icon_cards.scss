@@ -1,0 +1,19 @@
+.icon_cards {
+    &__icon {
+        color: var(--col-blue-400);
+        transition: color var(--transition);
+    }
+    &__card {
+        padding: 1.5rem 1rem;
+        height: 100%;
+        display: block;
+        border: 2px solid var(--col-blue-400);
+        transition: background-color var(--transition);
+        &:hover {
+            background-color: hsl( var(--hsl-blue-400) / 0.1 );
+            .icon_cards__icon {
+                color: var(--col-green-400);
+            }
+        }
+    }
+}

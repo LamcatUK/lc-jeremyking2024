@@ -1,0 +1,26 @@
+header {
+
+    #wrapper-navbar {
+        transition: top var(--transition);
+    }
+    &.hidden {
+        #wrapper-navbar {
+            top: -91px;
+        }
+    }
+
+    .navbar-toggler {
+        border-color: white;
+    }
+
+   #navbar {
+        background-color: var(--col-blue-400);
+        a.nav-link {
+            color: var(--col-white);
+            font-family: var(--ff-body);
+            font-weight: var(--fw-500);
+            font-size: var(--fs-400);
+        }
+   }
+
+}
