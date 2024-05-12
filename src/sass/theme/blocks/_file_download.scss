@@ -1,0 +1,12 @@
+.file_download {
+    &__preview {
+        border: 2px solid var(--col-blue-400);
+        width: min(200px,50vw);
+        display: block;
+        margin-inline: auto;
+        transition: border-color var(--transition);
+        &:hover {
+            border-color: var(--col-green-400);
+        }
+    }
+}

@@ -22017,11 +22017,14 @@ strong {
   border-radius: 0;
 }
 
-.btn-outline-white {
+.btn-outline-white,
+.wpcf7-submit.wpcf7-submit-white[type=submit] {
   color: var(--col-white);
   border: 2px solid var(--col-white);
+  background-color: transparent;
 }
-.btn-outline-white:hover {
+.btn-outline-white:hover,
+.wpcf7-submit.wpcf7-submit-white[type=submit]:hover {
   background-color: var(--col-white);
   color: var(--col-blue-400);
 }
@@ -22029,15 +22032,16 @@ strong {
 .btn-primary,
 .btn-outline-primary,
 .wpcf7 input[type=submit],
-.wpcf7-submit,
+.wpcf7-submit.wpcf7-submit-blue[type=submit],
 .btn-outline-blue {
   color: var(--col-blue-400);
   border: 2px solid var(--col-blue-400);
+  background-color: transparent;
 }
 .btn-primary:hover,
 .btn-outline-primary:hover,
 .wpcf7 input[type=submit]:hover,
-.wpcf7-submit:hover,
+.wpcf7-submit.wpcf7-submit-blue[type=submit]:hover,
 .btn-outline-blue:hover {
   background-color: var(--col-blue-400);
   color: var(--col-white);
@@ -22233,6 +22237,10 @@ footer .colophon .container-xl {
   color: inherit !important;
 }
 
+.form_cta__content a, .form_cta h2, .form_cta .h2 {
+  color: inherit !important;
+}
+
 .testimonials .carousel-inner {
   padding-bottom: 3rem;
 }
@@ -22279,6 +22287,17 @@ footer .colophon .container-xl {
 }
 .icon_cards__card:hover .icon_cards__icon {
   color: var(--col-green-400);
+}
+
+.file_download__preview {
+  border: 2px solid var(--col-blue-400);
+  width: min(200px, 50vw);
+  display: block;
+  margin-inline: auto;
+  transition: border-color var(--transition);
+}
+.file_download__preview:hover {
+  border-color: var(--col-green-400);
 }
 
 body {

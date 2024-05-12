@@ -15,9 +15,11 @@
 //     }
 // }
 
-.btn-outline-white {
+.btn-outline-white,
+.wpcf7-submit.wpcf7-submit-white[type=submit] {
     color: var(--col-white);
     border: 2px solid var(--col-white);
+    background-color: transparent;
     &:hover {
         background-color: var(--col-white);
         color: var(--col-blue-400);
@@ -26,10 +28,11 @@
 
 .btn-primary,
 .btn-outline-primary,
-.wpcf7-submit,
+.wpcf7-submit.wpcf7-submit-blue[type=submit],
 .btn-outline-blue {
     color: var(--col-blue-400);
     border: 2px solid var(--col-blue-400);
+    background-color: transparent;
     &:hover {
         background-color: var(--col-blue-400);
         color: var(--col-white);
