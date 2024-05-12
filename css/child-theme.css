@@ -22064,6 +22064,10 @@ header #navbar a.nav-link {
   font-family: var(--ff-body);
   font-weight: var(--fw-500);
   font-size: var(--fs-400);
+  transition: color var(--transition);
+}
+header #navbar a.nav-link:hover {
+  color: var(--col-green-400);
 }
 
 footer {

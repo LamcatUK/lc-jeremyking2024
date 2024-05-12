@@ -20,6 +20,10 @@ header {
             font-family: var(--ff-body);
             font-weight: var(--fw-500);
             font-size: var(--fs-400);
+            transition: color var(--transition);
+            &:hover {
+                color: var(--col-green-400);
+            }
         }
    }
 
